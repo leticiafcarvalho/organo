@@ -7,6 +7,11 @@ function App() {
 
   const times = [
     {
+      nome: 'Programação',
+      corPrimaria: '#57C278',
+      corSecundaria: '#D9F7E9',
+    },
+    {
       nome: 'Front-End',
       corPrimaria: '#82CFFA',
       corSecundaria: '#E8F8FF',
@@ -50,7 +55,6 @@ function App() {
         <Banner /> 
         <Formulario aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}/> 
         {times.map(time => <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria}/>)}
-        <Time nome="Programação"/>
     </div>
   );
 }
