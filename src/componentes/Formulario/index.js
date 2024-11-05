@@ -19,7 +19,6 @@ const Formulario = (props) => {
             imagem,
             time
         })
-
         setNome('')
         setCargo('')
         setImagem('')
@@ -52,7 +51,7 @@ const Formulario = (props) => {
                 />
                 <ListaSuspensa
                     obrigatorio={true}
-                    label="Time"
+                    label="Time" 
                     itens={props.times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
